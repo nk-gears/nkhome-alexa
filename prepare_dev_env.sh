@@ -61,7 +61,7 @@ git fetch github dev
 git checkout -b dev github/dev
 
 # prepare master branch by merging with dev
-git checkout master
+git checkout main
 create_and_commit_env_file
 merge_lambda_dir
 merge_skill_package
