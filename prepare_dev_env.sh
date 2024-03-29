@@ -60,7 +60,11 @@ git remote add github "${SKILL_REPO}"
 git fetch github dev
 git checkout -b dev github/dev
 
+<<<<<<< HEAD
 # prepare main branch by merging with dev
+=======
+# prepare master branch by merging with dev
+>>>>>>> dev
 git checkout main
 create_and_commit_env_file
 merge_lambda_dir
