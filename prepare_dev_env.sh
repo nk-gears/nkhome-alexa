@@ -51,7 +51,7 @@ SKILL_REPO="https://github.com/$2.git"
 
 cd "${SKILL_ROOT_DIR}"
 
-# commit the changes in master branch as part of the skill creation
+# commit the changes in main branch as part of the skill creation
 git add .gitignore skill-package/
 git commit -m "Initial Commit for skill-package"
 
@@ -60,8 +60,8 @@ git remote add github "${SKILL_REPO}"
 git fetch github dev
 git checkout -b dev github/dev
 
-# prepare master branch by merging with dev
-git checkout master
+# prepare main branch by merging with dev
+git checkout main
 create_and_commit_env_file
 merge_lambda_dir
 merge_skill_package
